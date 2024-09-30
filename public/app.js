@@ -1,7 +1,7 @@
 // state = all den data som appen har lagrat utifrån vad användaren gör
 // state innheåller också vår config eller "start-värden"
 
-state = {
+const state = {
 	shop: [
 		{ vegetable: "broccoli", amount: 12, color: "green" },
 		{ vegetable: "potato", amount: 25, color: "brown" },
