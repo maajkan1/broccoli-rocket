@@ -7,6 +7,10 @@ const state = {
 		{ vegetable: "Potato", amount: 25, color: "brown" },
 		{ vegetable: "Onion", amount: 8 },
 	],
+	addVegetable: function (vegetable, amount) {
+		// add vegetable
+		this.shop.push({ vegetable, amount });
+	},
 };
 
 // console.log(state.shop[1].amount);
@@ -14,17 +18,27 @@ const state = {
 
 // document.querySelector(".shop").innerHTML = state.shop[1].amount;
 
-// dynamiskt bygga GUI
+// dynamiskt bygga GUI med conditional rendering
+// render = visa upp "nya" GUI
 
-for (const v of state.shop) {
-	// skapa ny div-tag
-	const vegetable = document.createElement("div");
+const renderShop = () => {
+	// tömma shop-diven först!
 
-	// lägg till text i div-taggen, ta text ifrån state
-	vegetable.innerHTML = `${v.vegetable} (amount: ${v.amount})${
-		v.color === undefined ? "" : ", " + v.color
-	}`;
+	for (const v of state.shop) {
+		// skapa ny div-tag
+		const vegetable = document.createElement("div");
 
-	// lägg till nya div-taggen i DOMen
-	document.querySelector(".shop").appendChild(vegetable);
-}
+		// lägg till text i div-taggen, ta text ifrån state
+		vegetable.innerHTML = `${v.vegetable} (amount: ${v.amount})${
+			v.color === undefined ? "" : ", " + v.color
+		}`;
+
+		// lägg till nya div-taggen i DOMen
+		document.querySelector(".shop").appendChild(vegetable);
+	}
+};
+
+// här kommer appen:
+
+state.addVegetable("Cucumber", 34);
+renderShop();
