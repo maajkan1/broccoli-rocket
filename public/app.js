@@ -23,6 +23,8 @@ const state = {
 
 const renderShop = () => {
 	// tömma shop-diven först!
+	const shopDiv = document.querySelector(".shop");
+	shopDiv.innerHTML = "";
 
 	for (const v of state.shop) {
 		// skapa ny div-tag
@@ -34,7 +36,7 @@ const renderShop = () => {
 		}`;
 
 		// lägg till nya div-taggen i DOMen
-		document.querySelector(".shop").appendChild(vegetable);
+		shopDiv.appendChild(vegetable);
 	}
 };
 
@@ -42,3 +44,19 @@ const renderShop = () => {
 
 state.addVegetable("Cucumber", 34);
 renderShop();
+
+document.querySelector(".add-vegetable").addEventListener("click", (e) => {
+	e.preventDefault();
+
+	//console.log(document.querySelector("#vegetable").value);
+	//console.log(document.querySelector("#amount").value);
+
+	state.addVegetable(
+		document.querySelector("#vegetable").value,
+		document.querySelector("#amount").value
+	);
+
+	//console.log(state);
+
+	renderShop();
+});
