@@ -3,9 +3,9 @@
 
 const state = {
 	shop: [
-		{ vegetable: "broccoli", amount: 12, color: "green" },
-		{ vegetable: "potato", amount: 25, color: "brown" },
-		{ vegetable: "onion", amount: 8 },
+		{ vegetable: "Broccoli", amount: 12, color: "green" },
+		{ vegetable: "Potato", amount: 25, color: "brown" },
+		{ vegetable: "Onion", amount: 8 },
 	],
 };
 
