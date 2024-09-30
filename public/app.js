@@ -7,6 +7,7 @@ const state = {
 		{ vegetable: "Potato", amount: 25, color: "brown" },
 		{ vegetable: "Onion", amount: 8 },
 	],
+	order: [],
 	addVegetable: function (vegetable, amount) {
 		// add vegetable
 		this.shop.push({ vegetable, amount });
@@ -18,8 +19,8 @@ const state = {
 
 // document.querySelector(".shop").innerHTML = state.shop[1].amount;
 
-// dynamiskt bygga GUI med conditional rendering
-// render = visa upp "nya" GUI
+// dynamiskt bygga GUI med conditional rendering med ternary operator
+// render = ändrar / visa upp "nya" GUI
 
 const renderShop = () => {
 	// tömma shop-diven först!
