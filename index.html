@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>broccoli-rocket</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<h2> Broccoli Rocket🚀 </h2>
+		</header>
+		<form action="">
+			<h2>Add vegetable to shop</h2>
+			<label for="vegetable">
+				<p>Vegetable:</p>
+				<input type="text" name="vegetable" id="vegetable"
+			/></label>
+			<label for="amount">
+				<p>Amount:</p>
+				<input type="number" name="amount" id="amount"
+			/></label>
+			<label for="color">
+				<p>Color:</p>
+				<select name="colors" id="colors">
+					<option value="Green">Green</option>
+					<option value="Red">Red</option>
+					<option value="Yellow">Yellow</option>
+					<option value="White">White</option>
+					<option value="Tan">Tan</option>
+					<option value="Brown">Brown</option>
+					<option value="Blue">Blue</option>
+					<option value="Purple">Purple</option>
+					<option value="Orange">Orange</option>
+				  </select>
+			</label>
+			<p>
+				<button type="submit" class="add-vegetable">Add vegetable</button>
+			</p>
+		</form>
+		<div class="shop"></div>
+	</body>
+</html>

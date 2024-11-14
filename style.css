@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #788990;
+}
+header {
+    margin: 0 auto;
+    width: 80%;
+    height: 15rem;
+    background-image: url(Gemini_Generated_Image_58451m58451m5845.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+header > h2 {
+    font-size: 5rem;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.shop > div   {
+    font-size: 1.5rem;
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-direction: row;
+   margin: 10px;
+   padding: 10px;
+}
+.shop button {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    color: white;
+}

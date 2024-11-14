@@ -1,0 +1,45 @@
+
+
+Gör en javascript fil, som tar input på grönsak och lägger till en ikon.
+
+
+Färger på grönsakerna
+Vi vill lägga till ett feature för att ha koll på färgerna på grönsakerna. 
+Vi vill ha ett Add color-formulär där man lägger till en färg till state. 
+Sen vill vi att formuläret Add vegetable har en drop down med alla färger man kan 
+välja mellan så att en grönsak som läggs till har en färg.
+
+UTMANING: Vi vill också ha lite meta-data som visas. Hur många färger har vi? 
+Hur många grönsakssorter har vi per färg? Hur många faktiska grönsaker har vi av varje färg?
+
+Completed: 
+1: Gjorde så formen automatiskt nollställdes efter Submit. Targetade idn på input fieldsen och gjorde value = "".
+
+
+ToDo: 
+1. Skapa en funktion som kallas increment, funktionen ska targeta amount och kunna antingen öka eller minska
+antalet vegetables i DOM, det ska bara reRendra den delen som uppdateras. 
+Förslag: 
+function addEventListener(e) {
+    //Göra en button onclick i htmlen?? Kanske JS?
+    Button onclick = amount += 1;
+    //Och kanske göra en separat funktion?
+    button onclick = amount -= 1;
+}
+ska kunna lägga in funktionen i själva buttonen.
+
+Update: Fått två knappar som increment eller decrementar, ville ha de brevid amount men kan nog göra de snyggt med CSS!
+
+
+2. Lägg till en ny input med color, ska vara dropdown och kunna addera color till grönsaken.
+loop koden har redan med all logik så fixa bara ett nytt input field i html och sen fixa i shop så att 
+color finns att lägga till. Sen ska du kunna displaya color till htmlen och göra det snyggt med CSS.
+Ska man kanske göra en komplicerad kod där du listar upp massvis med grönsaker, lägger till en symbol
+och såfort du skriver en grönsak som finns (måste != caseSensetive). Kan göra user-experience riktigt snygg.
+Kanske göra en osynlig grönsak, såfort du skriver namnet så kommer en tom ikon av grönsaken så fylls färgen men 
+color du selectad som input?
+
+3. Stylea hela sidan med CSS, flexbox, få det att se ut som en webapp är du som admin lägger till "roliga" grönsaker 
+som kunderna ska kunna se, orkar inte göra auth, men kan låtsas att bara "du" kan se formulräret men inget jag tänker implementera.
+
+4. 
