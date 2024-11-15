@@ -39,4 +39,8 @@ header > h2 {
     width: 30px;
     background-color: black;
     color: white;
+    cursor: pointer;
+}
+.shop button:hover {
+    background-color: yellowgreen;
 }
